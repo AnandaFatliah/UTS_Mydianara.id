@@ -74,9 +74,41 @@ nav li:hover {
   height: 25px;
 }
 
-/*#F1F0E8
-#ADC4CE
-#EEE0C9
-7C96AB
-#F1F0E8*/
+/* rating */
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-image: url('Resource/star-kosong.png'); /* Replace with your star image */
+  background-size: cover;
+  display: inline-block;
+}
+
+.rating input:checked ~ label {
+  background-image: url('Resource/star-isi.png'); /* Replace with your filled star image */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  background-image: url('Resource/star-isi.png'); /* Replace with your filled star image */
+}
+
+.video-container {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: 70%;
+  display: block;
+}
+
 
