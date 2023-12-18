@@ -55,15 +55,6 @@ nav li:hover {
   color: blue;
 }
 
-.right-section {
-  display: flex;
-  align-items: center;
-}
-
-.right-images {
-  display: flex;
-}
-
 .right-images a {
   margin-right: 35px; /* Adjust this margin to create space between right images */
 }
@@ -111,45 +102,6 @@ video {
   display: block;
 }
 
-.product-card {
-  display: flex;
-  width: 600px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  }
-
-  .product-info {
-  flex: 1;
-  padding: 20px;
-  }
-
-  .product-info h2 {
-  color: #333;
-  }
-
-  .product-info p {
-  color: #666;
-  }
-
-  .product-image {
-  flex: 1;
-  background-image: url('your-image-url.jpg'); /* Ganti dengan URL gambar produk */
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
-  }
-
-  .product-card:hover {
-  transform: scale(1.05);
-  }
-
-  .product-card:hover .product-image {
-  transform: scale(1.2);
-  }
 
   a{
     text-decoration: none; /* Menghilangkan garis bawah */
@@ -165,4 +117,69 @@ video {
     color: inherit; /* Menyamakan warna dengan warna teks elemen induk pada hover dan active */
   }
 
+  .image-card:hover {
+    transform: scale(1.05);
+    }
 
+    
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /*untuk next line*/
+      margin: 0px 10px 10px 0px;
+    }
+
+    .image-card {
+      text-align: center;
+      margin: 0 10px 10px 0;
+      width: calc(25% - 10px);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-card > img {
+      max-width: 100%;
+      height: auto;
+      /*      border: 1px solid #ddd;*/
+      border-radius: 5px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: #f4f4f4;
+      padding: 20px;
+      height: auto;
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+      justify-content: space-between;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #68635f;
+      margin-top: 10px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    /* Gaya responsif untuk layar yang lebih kecil */
+    @media screen and (max-width: 800px) {
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      nav a {
+        float: none;
+        width: 100%;
+      }
+    }

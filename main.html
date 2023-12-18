@@ -4,125 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <style>
-      /* Create two unequal columns that floats next to each other */
-
-      .image-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; /*untuk next line*/
-        margin: 0px 10px 10px 0px;
-      }
-
-      .image-card {
-        text-align: center;
-        margin: 0 10px 10px 0;
-        width: calc(25% - 10px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .image-card > img {
-        max-width: 100%;
-        height: auto;
-        /*      border: 1px solid #ddd;*/
-        border-radius: 5px;
-      }
-
-      /* Add a card effect for articles */
-      .card {
-        background-color: #f4f4f4;
-        padding: 20px;
-        height: auto;
-      }
-
-      /* Clear floats after the columns */
-      .row::after {
-        content: "";
-        display: table;
-        clear: both;
-        justify-content: space-between;
-      }
-
-      /* Footer */
-      .footer {
-        padding: 10px;
-        text-align: center;
-        background: #776b5d;
-        margin-top: 10px;
-      }
-
-      /* Gaya untuk daftar menu kanan*/
-      .menu {
-        padding: 0;
-      }
-
-      /*menambah border bawah tag <li> */
-      .menu li {
-        border-bottom: 1px dotted #444;
-        list-style-type: none;
-      }
-
-      /* mengatur desain menu  yang dibuat dengan tag a */
-      .menu a {
-        display: block;
-        padding: 20px 20px;
-        list-style: none;
-        color: #000;
-        text-decoration: none;
-      }
-
-      /*mengganti background menu ketika ditunjuk mouse */
-      .menu li a:hover {
-        background: #776b5d;
-      }
-
-      /* Gaya untuk elemen input formulir */
-      input[type="text"],
-      input[type="email"],
-      select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      /* Gaya untuk tombol submit formulir */
-      input[type="submit"] {
-        width: 100%;
-        background-color: #776b5d;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #b0a695;
-      }
-
-      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-      /* Gaya responsif untuk layar yang lebih kecil */
-      @media screen and (max-width: 800px) {
-        .leftcolumn,
-        .rightcolumn {
-          width: 100%;
-          padding: 0;
-        }
-      }
-
-      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
-        nav a {
-          float: none;
-          width: 100%;
-        }
-      }
-    </style>
     <title>Mydianara.id</title>
   </head>
 
@@ -164,8 +45,8 @@
           <div class="image-card" >
             <img
               src="Resource/Img/jilbab.jpg"
-              alt="Image 1"
-              title="Inner Ciput Bandana - Hitam"
+              alt="Malay Hijab Standart"
+              title="Malay Hijab Standart"
             />
             <p style="text-align: center"><b>Malay Hijab Standart</b></p>
             <div class="rating">
@@ -186,8 +67,8 @@
           <div class="image-card">
             <img
               src="Resource/Img/jilbab6.jpg"
-              alt="Image 2"
-              title="Inner Ciput Bandana - Cream"
+              alt="Paris Voila"
+              title="Paris Voila"
             />
             <p style="text-align: center"><b>Paris Voila</b></p>
             <div class="rating">
@@ -208,8 +89,8 @@
           <div class="image-card">
             <img
               src="Resource/Img/jilbab3.jpg"
-              alt="Image 3"
-              title="Inner Ciput Bandana - Grey"
+              alt="Paris Voila"
+              title="Paris Voila"
             />
             <p style="text-align: center"><b>Paris Voila</b></p>
             <div class="rating">
@@ -228,7 +109,7 @@
           </div>
 
           <div class="image-card">
-            <img src="Resource/Img/jilbab5.jpg" alt="Image 4" title="Image 4" />
+            <img src="Resource/Img/jilbab5.jpg" alt="Image 4" title="Paris Voila" />
             <p style="text-align: center"><b>Paris Voila</b></p>
             <div class="rating">
               <input type="radio" id="star5" name="rating" value="5" />
@@ -257,8 +138,8 @@
           <div class="image-card" >
             <img
               src="Resource/Img/ciput.webp"
-              alt="Image 5"
-              title="Inner Ciput Bandana - Hitam"
+              alt="Mydianara Bandana Inner"
+              title="Mydianara Bandana Inner"
             />
             <p style="text-align: center"><b>Mydianara Bandana Inner</b></p>
             <div class="rating">
@@ -279,8 +160,8 @@
           <div class="image-card">
             <img
               src="Resource/Img/ciput1.webp"
-              alt="Image 6"
-              title="Inner Ciput Bandana - Cream"
+              alt="Mydianara Bandana Inner"
+              title="Mydianara Bandana Inner"
             />
             <p style="text-align: center"><b>Mydianara Bandana Inner</b></p>
             <div class="rating">
@@ -301,8 +182,8 @@
           <div class="image-card">
             <img
               src="Resource/Img/ciput2.webp"
-              alt="Image 7"
-              title="Inner Ciput Bandana - Grey"
+              alt="Mydianara Bandana Inner"
+              title="Mydianara Bandana Inner"
             />
             <p style="text-align: center"><b>Mydianara Bandana Inner</b></p>
             <div class="rating">
@@ -321,7 +202,7 @@
           </div>
 
           <div class="image-card">
-            <img src="Resource/Img/ciput3.webp" alt="Image 8" title="Image 8" />
+            <img src="Resource/Img/ciput3.webp" alt="Mydianara Bandana Inner" title="Mydianara Bandana Inner" />
             <p style="text-align: center"><b>Mydianara Bandana Inner</b></p>
             <div class="rating">
               <input type="radio" id="star5" name="rating" value="5" />
@@ -349,8 +230,8 @@
           <div class="image-card" >
             <img
               src="Resource/Img/pin1.jpg"
-              alt="Image 9"
-              title="Inner Ciput Bandana - Hitam"
+              alt="Mydianara Pin Premium"
+              title="Mydianara Pin Premium"
             />
             <p style="text-align: center"><b>Mydianara Pin Premium</b></p>
             <div class="rating">
@@ -371,8 +252,8 @@
           <div class="image-card">
             <img
               src="Resource/Img/pin2.jpg"
-              alt="Image 10"
-              title="Inner Ciput Bandana - Cream"
+              alt="Mydianara Pin Premium"
+              title="Mydianara Pin Premium"
             />
             <p style="text-align: center"><b>Mydianara Pin Premium</b></p>
             <div class="rating">
@@ -393,8 +274,8 @@
           <div class="image-card">
             <img
               src="Resource/Img/pin3.jpg"
-              alt="Image 11"
-              title="Inner Ciput Bandana - Grey"
+              alt="Mydianara Pin Premium"
+              title="Mydianara Pin Premium"
             />
             <p style="text-align: center"><b>Mydianara Pin Premium</b></p>
             <div class="rating">
@@ -413,7 +294,7 @@
           </div>
 
           <div class="image-card">
-            <img src="Resource/Img/pin4.jpg" alt="Image 12" title="Image 12" />
+            <img src="Resource/Img/pin4.jpg" alt="Mydianara Pin Premium" title="Mydianara Pin Premium" />
             <p style="text-align: center"><b>Mydianara Pin Premium</b></p>
             <div class="rating">
               <input type="radio" id="star5" name="rating" value="5" />
@@ -440,32 +321,7 @@
         </video>
       </div>
 
-      <div class="product-card">
-        <div class="product-info">
-          <h2>Product Name</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="product-image"></div>
-      </div>
-    
-      <div class="product-card">
-        <div class="product-info">
-          <h2>Another Product</h2>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="product-image"></div>
-      </div>
       
-    </div>
-
-    <div class="centercolumn">
-      <div class="card">
-        <h2>Contact Person</h2>
-        <form action="/action_page.php">
-          <!-- Your form inputs here -->
-        </form>
-      </div>
-    </div>
 
     <div class="footer">Copyright &copy; 2023</div>
   </body>
