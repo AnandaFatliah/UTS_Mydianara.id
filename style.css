@@ -125,7 +125,7 @@ video {
     .image-container {
       display: flex;
       justify-content: space-around;
-      flex-wrap: wrap; /*untuk next line*/
+      flex-wrap: wrap; 
       margin: 0px 10px 10px 0px;
     }
 
