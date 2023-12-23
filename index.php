@@ -1,7 +1,16 @@
 <?php
  session_start();
  ob_start();
+
+ if(isset($_GET['redirect'])) {
+    // Jika ada, arahkan ke halaman yang ditentukan
+    $redirect = $_GET['redirect'];
+    header("Location: $redirect");
+    exit();
+ }
  include "lib/config.php";
+ header("Location: main.html");
+ exit();
  if(empty($_SESSION['username']) or empty($_SESSION['password'])){
  echo "<script>alert('Anda harus login terlebih dahulu')</script>";
  echo "<meta http-equiv='refresh' content='0; url=login.php'>";
@@ -14,7 +23,7 @@
         <title>Dashboard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style - copy.css">
     </head>
     <body>
         <header>
