@@ -2,7 +2,7 @@
 $dbHost = "localhost";
 $dbUser = "root";
 $dbPass = "";
-$dbName = "db_mydianara.id";
+$dbName = "db_mydianara_id";
 
 $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
 

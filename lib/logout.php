@@ -1,6 +1,13 @@
 <?php
- session_start();
- session_destroy();
- echo "<script>alert('Anda telah logout')</script>";
- echo "<meta http-equiv='refresh' content='0;url=login.php'>";
+session_start();
+
+// Hapus semua variabel sesi
+session_unset();
+
+// Hancurkan sesi
+session_destroy();
+
+// Redirect ke main.html setelah logout
+header("Location: main.html");
+exit();
 ?>
