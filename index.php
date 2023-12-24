@@ -1,16 +1,10 @@
 <?php
  session_start();
  ob_start();
-
- if(isset($_GET['redirect'])) {
-    // Jika ada, arahkan ke halaman yang ditentukan
-    $redirect = $_GET['redirect'];
-    header("Location: $redirect");
-    exit();
- }
  include "lib/config.php";
- header("Location: main.html");
+ header("Location: main.php");
  exit();
+//  masih error dari tombol login ke -> dashboard
  if(empty($_SESSION['username']) or empty($_SESSION['password'])){
  echo "<script>alert('Anda harus login terlebih dahulu')</script>";
  echo "<meta http-equiv='refresh' content='0; url=login.php'>";
