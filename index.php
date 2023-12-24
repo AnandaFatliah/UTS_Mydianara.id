@@ -2,7 +2,7 @@
  session_start();
  ob_start();
  include "lib/config.php";
- header("Location: main.php");
+ header("Location: main.html");
  exit();
 //  masih error dari tombol login ke -> dashboard
  if(empty($_SESSION['username']) or empty($_SESSION['password'])){
