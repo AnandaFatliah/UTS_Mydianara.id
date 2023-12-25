@@ -2,6 +2,20 @@
 if (!defined('INDEX')) die("");
 ?>
 
+<style>
+    .circle-img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px; /* Sesuaikan ukuran sesuai kebutuhan */
+        height: 100px; /* Sesuaikan ukuran sesuai kebutuhan */
+    }
+
+    .circle-img img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
 <h2 class="judul">Data Pegawai</h2>
 <a class="tombol" href="?hal=pegawai_tambah">Tambah</a>
 <table class="table">
@@ -27,7 +41,11 @@ if (!defined('INDEX')) die("");
         ?>
             <tr>
                 <td><?= $no ?></td>
-                <td><img src="images/<?= $data['foto'] ?>" width="100"></td>
+                <td>
+                    <div class="circle-img">
+                        <img src="images/<?= $data['foto'] ?>" width="100">
+                    </div>
+                </td>
                 <td><?= $data['nama_pegawai'] ?></td>
                 <td><?= $data['jenis_kelamin'] ?></td>
                 <td><?= $data['tgl_lahir'] ?></td>

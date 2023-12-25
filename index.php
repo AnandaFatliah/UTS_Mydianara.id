@@ -20,7 +20,7 @@ if (empty($_SESSION['username']) or empty($_SESSION['password'])) {
         </head>
         <body>
             <header>
-                Aplikasi Manajemen Pegawai
+                Aplikasi Manajemen Pegawai Mydianara
             </header>
             <div class="container">
                 <aside>

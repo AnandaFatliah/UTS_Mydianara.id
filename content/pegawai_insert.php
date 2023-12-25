@@ -26,7 +26,7 @@ if ($tipefile != "image/jpeg" && $tipefile != "image/jpg" && $tipefile != "image
 if ($error == "") {
     $ext = strrchr($foto, ".");
     $foto = basename($foto, $ext) . time() . $ext;
-    move_uploaded_file($lokasi, "images/" . $foto);
+    move_uploaded_file($lokasi, "Img/" . $foto);
 
     $query = mysqli_query($conn, "INSERT INTO pegawai SET
         foto = '$foto',
