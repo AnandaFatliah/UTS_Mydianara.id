@@ -3,8 +3,6 @@ session_start();
 ob_start();
 include "lib/config.php";
 
-
-
 // masih error dari tombol login ke -> dashboard
 if (empty($_SESSION['username']) or empty($_SESSION['password'])) {
     echo "<script>alert('Anda harus login terlebih dahulu')</script>";
