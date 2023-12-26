@@ -5,7 +5,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #280872;
+  background: #F3EEEA;
 }
 
 .container {
@@ -14,13 +14,12 @@ body {
   justify-content: center;
 }
 
-/* mengatur kotak form login */
 .login-box {
-  margin-top: 150px;
+  margin-top: 80px;
+  margin-bottom: 100px;
   flex-basis: 400px;
   background: #fff;
   padding: 20px;
-  /* n: perubahan */
   border-radius: 25px;
 }
 
@@ -40,26 +39,35 @@ select {
 }
 
 input[type="submit"] {
-  background-color: #280872;
+  background-color: #BBAB8C;
   border: none;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 
+
 /* Layout */
 /* Mengatur desain header */
 header {
-  background: #280872;
+  background: #BBAB8C;
   color: #fff;
   padding: 15px 20px;
   font-size: 20px;
 }
 
+footer {
+  /* n: perubahan Nanda */
+  background: #BBAB8C;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
 /* Mengatur lebar menu 20% dengan background hitam */
 aside {
   flex: 20%;
-  background: #222;
+  background: #776B5D;
 }
 
 /* Mengatur lebar konten utama 80% dengan background putih */
@@ -78,13 +86,7 @@ section.main > h3:hover {
 }
 
 /* Mengatur footer dengan background biru dan teks di tengah */
-footer {
-  /* n: perubahan Nanda */
-  background: #28087209;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+
 
 /*mengatur layout pada layar kecil (responsiv) */
 @media (max-width: 700px) {
@@ -97,6 +99,7 @@ footer {
 /*membuang padding tag<ul> */
 .menu {
   padding: 0;
+
 }
 
 /*menambah border bawah tag <li> */
@@ -104,8 +107,8 @@ footer {
   border-bottom: 1px dotted #444;
 }
 
-/* mengatur desain menu  yang dibuat dengan tag a */
-.menu a {
+/* Mengatur desain menu yang dibuat dengan tag a */
+.menu a{
   display: block;
   padding: 20px 20px;
   list-style: none;
@@ -113,10 +116,12 @@ footer {
   text-decoration: none;
 }
 
-/*mengganti background menu ketika ditunjuk mouse */
-.menu:hover {
-  background: #000;
+/* Mengatur icon pada menu */
+.menu a i {
+  margin-right: 10px;
 }
+
+
 
 /* Tabel */
 /* Mengatur desain judul halaman dengan border di bawah */
