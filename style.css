@@ -78,18 +78,18 @@ nav li:hover {
   cursor: pointer;
   width: 15px;
   height: 15px;
-  background-image: url('Resource/star-kosong.png'); /* Replace with your star image */
+  background-image: url("Resource/star-kosong.png"); /* Replace with your star image */
   background-size: cover;
   display: inline-block;
 }
 
 .rating input:checked ~ label {
-  background-image: url('Resource/star-isi.png'); /* Replace with your filled star image */
+  background-image: url("Resource/star-isi.png"); /* Replace with your filled star image */
 }
 
 .rating label:hover,
 .rating label:hover ~ label {
-  background-image: url('Resource/star-isi.png'); /* Replace with your filled star image */
+  background-image: url("Resource/star-isi.png"); /* Replace with your filled star image */
 }
 
 .video-container {
@@ -102,84 +102,82 @@ video {
   display: block;
 }
 
+a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: inherit; /* Menyamakan warna dengan warna teks elemen induk */
+}
 
-  a{
-    text-decoration: none; /* Menghilangkan garis bawah */
-    color: inherit; /* Menyamakan warna dengan warna teks elemen induk */
+a:visited {
+  color: inherit; /* Menyamakan warna dengan warna teks elemen induk setelah dikunjungi */
+}
+
+a:hover,
+a:active {
+  text-decoration: none; /* Menghilangkan garis bawah pada hover dan active */
+  color: inherit; /* Menyamakan warna dengan warna teks elemen induk pada hover dan active */
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0px 10px 10px 0px;
+}
+
+.image-card {
+  text-align: center;
+  margin: 0 10px 10px 0;
+  width: calc(25% - 10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-card > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  justify-content: space-between;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #68635f;
+  margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* Gaya responsif untuk layar yang lebih kecil */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
   }
+}
 
-  a:visited {
-    color: inherit; /* Menyamakan warna dengan warna teks elemen induk setelah dikunjungi */
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    width: 100%;
   }
-
-  a:hover, a:active {
-    text-decoration: none; /* Menghilangkan garis bawah pada hover dan active */
-    color: inherit; /* Menyamakan warna dengan warna teks elemen induk pada hover dan active */
-  }
-
-  .image-card:hover {
-    transform: scale(1.05);
-    }
-
-    
-    .image-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap; 
-      margin: 0px 10px 10px 0px;
-    }
-
-    .image-card {
-      text-align: center;
-      margin: 0 10px 10px 0;
-      width: calc(25% - 10px);
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .image-card > img {
-      max-width: 100%;
-      height: auto;
-      /*      border: 1px solid #ddd;*/
-      border-radius: 5px;
-    }
-
-    /* Add a card effect for articles */
-    .card {
-      background-color: #f4f4f4;
-      padding: 20px;
-      height: auto;
-    }
-
-    /* Clear floats after the columns */
-    .row::after {
-      content: "";
-      display: table;
-      clear: both;
-      justify-content: space-between;
-    }
-
-    /* Footer */
-    .footer {
-      padding: 20px;
-      text-align: center;
-      background: #68635f;
-      margin-top: 10px;
-    }
-
-    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-    /* Gaya responsif untuk layar yang lebih kecil */
-    @media screen and (max-width: 800px) {
-      .leftcolumn,
-      .rightcolumn {
-        width: 100%;
-        padding: 0;
-      }
-    }
-
-    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {
-      nav a {
-        float: none;
-        width: 100%;
-      }
-    }
+}

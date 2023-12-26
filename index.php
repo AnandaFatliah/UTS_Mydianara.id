@@ -3,7 +3,6 @@ session_start();
 ob_start();
 include "lib/config.php";
 
-// masih error dari tombol login ke -> dashboard
 if (empty($_SESSION['username']) or empty($_SESSION['password'])) {
     echo "<script>alert('Anda harus login terlebih dahulu')</script>";
     echo "<meta http-equiv='refresh' content='0; url=login.php'>";
@@ -17,6 +16,7 @@ if (empty($_SESSION['username']) or empty($_SESSION['password'])) {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="style2.css">
+            <link rel="icon" href="Resource/Mydianara.id.png" type="image/png" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-azqD27eM1e+Rf5Xz1Ml5l5tB0pNmkVpFExY5+TDIi6Uw6lxF/01vHbSm74gSmSx5UOE+MwlcvjGcoQ41Bf8qow==" crossorigin="anonymous" />
         </head>
         <body>

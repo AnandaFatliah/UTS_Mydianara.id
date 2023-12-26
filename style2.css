@@ -46,6 +46,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="submit"]:hover{
+  color: black;
+  background-color: beige;
+}
+
 
 /* Layout */
 /* Mengatur desain header */
@@ -224,4 +229,20 @@ input[type="radio"] {
   .form-group.input {
     width: 100%;
   }
+}
+
+button[type="button"] {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  background-color: #BBAB8C;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+button:hover{
+  color: black;
+  background-color: beige;
 }
