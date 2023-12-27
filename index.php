@@ -26,10 +26,10 @@ if (empty($_SESSION['username']) or empty($_SESSION['password'])) {
             <div class="container">
                 <aside>
                     <ul class="menu">
-                        <li><a href="?hal=dashboard" class="aktif"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                        <li><a href="?hal=pegawai"><i class="fas fa-users"></i> Data Pegawai</a></li>
-                        <li><a href="?hal=jabatan"><i class="fas fa-briefcase"></i> Data Jabatan</a></li>
-                        <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+                        <li><a href="?hal=dashboard" class="aktif">Dashboard</a></li>
+                        <li><a href="?hal=pegawai">Data Pegawai</a></li>
+                        <li><a href="?hal=jabatan">Data Jabatan</a></li>
+                        <li><a href="logout.php">Keluar</a></li>
                     </ul>
                 </aside>
                 <section class="main">
