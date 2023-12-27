@@ -17,7 +17,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         exit();
     } else {
         echo "<script>alert('Login Gagal, Silahkan Coba Lagi')</script>";
-        echo "<meta http-equiv='refresh' content='1; url=login.php'>";
+        echo "<meta http-equiv='refresh' content='1; url= ../login.php'>";
     }
 } else {
     // Jika username atau password tidak diset, kembalikan ke halaman login
